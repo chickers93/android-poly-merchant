@@ -1,0 +1,22 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">#FFC10D</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+    <!-- Splash Screen theme. -->
+    <style name="SplashTheme" parent="Theme.AppCompat.NoActionBar">
+        <item name="android:windowBackground">@drawable/splash_background</item>
+    </style>
+
+    <style name="RatingBar2">
+        <item name="colorControlNormal">@color/gray</item>
+        <item name="colorControlActivated">@color/colorPrimaryDark</item>
+        <item name="android:numStars">5</item>
+        <item name="android:stepSize">1</item>
+    </style>
+
+</resources>

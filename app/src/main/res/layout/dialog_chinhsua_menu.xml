@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingBottom="17dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:background="@color/colorPrimaryDark" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="220dp"
+        android:background="#f2f2f2"
+        android:gravity="center"
+        android:paddingTop="10dp">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:src="@drawable/ic_poly_merchant_xml" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_tenmonan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginVertical="10dp"
+        android:textAlignment="center"
+        android:textColor="@color/profilePrimaryDark"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginBottom="20dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:fontFamily="@font/icielplanton"
+            android:text="Giá cũ"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_giacu"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="2.5"
+            android:background="@drawable/border_add_text"
+            android:fontFamily="@font/icielplanton"
+            android:gravity="center"
+            android:inputType="numberDecimal"
+            android:textColor="#000"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginBottom="20dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:fontFamily="@font/icielplanton"
+            android:text="Giá mới"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/ed_giamoi"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="2.5"
+            android:background="@drawable/custom_btn2"
+            android:fontFamily="@font/icielplanton"
+            android:gravity="center"
+            android:inputType="numberDecimal"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginHorizontal="21dp"
+        android:background="@color/gray" />
+
+    <Button
+        android:id="@+id/btn_xacnhan"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/custom_btn"
+        android:fontFamily="@font/icielplanton"
+        android:text="Xác nhận"
+        android:textColor="@color/white" />
+
+</LinearLayout>

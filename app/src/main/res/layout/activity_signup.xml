@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:weightSum="10"
+    tools:context=".Signup">
+
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="150dp"
+        android:layout_height="0dp"
+        android:layout_gravity="center"
+        android:layout_weight="3"
+        app:srcCompat="@drawable/ic_logo" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="7"
+        android:background="@drawable/boder_bottom2"
+        android:gravity=""
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="186dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/icielplanton"
+            android:text="Đăng kí tài khoản"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textFontWeight="700"
+            android:textSize="22sp" />
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginHorizontal="40dp"
+            android:layout_marginTop="20dp"
+            app:boxStrokeColor="#F3F3F1">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/ed_email"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="Nhập email"
+                android:inputType="textEmailAddress"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="20sp">
+
+            </com.google.android.material.textfield.TextInputEditText>
+
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginHorizontal="40dp"
+            android:layout_marginTop="20dp"
+            app:boxStrokeColor="#F3F3F1">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/ed_name"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="Nhập tên"
+                android:inputType="textPersonName"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="20sp">
+
+            </com.google.android.material.textfield.TextInputEditText>
+
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginHorizontal="40dp"
+            android:layout_marginTop="20dp"
+            app:boxStrokeColor="#F3F3F1">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/ed_password"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="Nhập password"
+                android:inputType="textPassword"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="20sp">
+
+            </com.google.android.material.textfield.TextInputEditText>
+
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <TextView
+            android:id="@+id/tv_dangnhap"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginHorizontal="40dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/custom_btn"
+            android:fontFamily="@font/icielplanton"
+            android:gravity="center"
+            android:paddingVertical="5dp"
+            android:paddingTop="2dp"
+            android:text="Đăng nhập"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <com.github.ybq.android.spinkit.SpinKitView xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/spin_kit"
+            style="@style/SpinKitView.Large.Circle"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="25dp"
+            app:SpinKit_Color="@color/white" />
+
+        <TextView
+            android:id="@+id/tv_link_dn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:fontFamily="@font/icielplanton"
+            android:text="Đăng nhập tại đây"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="17dp" />
+
+    </LinearLayout>
+
+</LinearLayout>
